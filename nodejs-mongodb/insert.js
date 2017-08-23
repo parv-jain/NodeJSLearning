@@ -36,7 +36,7 @@ It also takes a callback function where you can work with any errors, or the res
 */
 
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/mydb";
+var url = "mongodb://localhost:27017/testdb";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
