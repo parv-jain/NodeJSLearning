@@ -1,3 +1,6 @@
+/*
+Create a Node.js file that opens the requested file and returns the content to the client. If anything goes wrong, throw a 404 error
+*/
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
