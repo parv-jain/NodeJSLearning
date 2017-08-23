@@ -59,3 +59,15 @@ MongoClient.connect(url, function(err, db) {
     db.close();
   });
 });
+
+/*
+The Result Object
+-----------------
+The updateOne() and the updateMany() methods return an object which contains information about how the execution affected the database.
+
+Most of the information is not important to understand, but one object inside the object is called "result" which tells us if the execution went OK, and how many documents were affected.
+
+The result object looks like this:
+
+{ n: 1, nModified: 2, ok: 1 }
+*/
