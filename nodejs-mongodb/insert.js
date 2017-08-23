@@ -35,8 +35,6 @@ The first parameter of the insertMany() method is an array of objects, containin
 It also takes a callback function where you can work with any errors, or the result of the insertion
 */
 
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/testdb";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;

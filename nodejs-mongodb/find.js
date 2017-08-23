@@ -1,4 +1,5 @@
 /*
+@Author: Parv Jain
 In MongoDB we use the find and findOne methods to find data in a collection.
 
 Just like the SELECT statement is used to find data in a table in a MySQL database.
@@ -36,8 +37,6 @@ The first parameter of the find() method is a query object. In this example we u
 
 No parameters in the find() method gives you the same result as SELECT * in MySQL.
 */
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/testdb";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
