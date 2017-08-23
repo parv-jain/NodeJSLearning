@@ -41,3 +41,12 @@ MongoClient.connect(url, function(err, db) {
     db.close();
   });
 });
+
+/*
+output:
+[
+  { _id: 1, product_id: 154, status: 1, orderdetails: [
+    { _id: 154, name: 'Chocolate Heaven' } ]
+  }
+]
+*/
